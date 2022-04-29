@@ -1,0 +1,16 @@
+condition 1: vérifier si la quantité du produit disponiblele système renvoie un message de :La quantité disponible si elle n'est pas disponible alors le système renvoie un message de :La quantité épuisé en rouge(déjà fait)
+condition 2: Vérifier si le client est inscrit sur le système: le client connecté sur le système fait appatre le icone du pannier si le client n'est pas connecté l'icone du panier n'aparait pas.(déjà fait).
+condition 3:vérifier si le client est inscrit sur le système:le client qui n'est pas connecté sera renvoyer sur le formulaire de connection oû il doit s'inscrire ou se connecter à son compte si la session du client ouvert le renvoie au panier le produit en question.
+
+<?php 
+if ($s->quantite != 0) {
+if(isset($_SESSION['id'])){
+echo Ajouter au panier;
+}else{
+Ajouter au panier(le lien la connection du client);
+}
+}else {
+echo'La quantité épuisé'
+;}
+?>
+(La fonctionnalité si dessus est déjà faite)

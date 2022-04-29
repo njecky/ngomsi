@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url('assets/fonts/MontserratAlternates-Bold.eot');
+    src: url('assets/fonts/MontserratAlternates-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/MontserratAlternates-Bold.woff2') format('woff2'),
+        url('assets/fonts/MontserratAlternates-Bold.woff') format('woff'),
+        url('assets/fonts/MontserratAlternates-Bold.ttf') format('truetype'),
+        url('assets/fonts/MontserratAlternates-Bold.svg#MontserratAlternates-Bold') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/Montserrat-Regular.eot');
+    src: url('assets/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('assets/fonts/Montserrat-Regular.woff') format('woff'),
+        url('assets/fonts/Montserrat-Regular.ttf') format('truetype'),
+        url('assets/fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+body,html {
+  position: relative;
+  font-size: 16px;
+  font-family: "Montserrat",sans-serif;
+  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.87);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-weight: 500;
+  min-height: 100%;
+}
+/*le panier*/
+.table>tbody>tr>td, .table>tfoot>tr>td{
+    vertical-align: middle;
+}
+@media screen and (max-width: 600px) {
+    table#cart tbody td .form-control{
+    width:20%;
+    display: inline !important;
+  }
+  .actions .btn{
+    width:36%;
+    margin:1.5em 0;
+  }
+  
+  .actions .btn-info{
+    float:left;
+  }
+  .actions .btn-danger{
+    float:right;
+  }
+  
+  table#cart thead { display: none; }
+  table#cart tbody td { display: block; padding: .6rem; min-width:320px;}
+  table#cart tbody tr td:first-child { background: #333; color: #fff; }
+  table#cart tbody td:before {
+    content: attr(data-th); font-weight: bold;
+    display: inline-block; width: 8rem;
+  }
+  table#cart tfoot td{display:block; }
+  table#cart tfoot td .btn{display:block;}
+}
+
